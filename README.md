@@ -289,8 +289,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Support
 
-- 📧 Email: your-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/twelve-data-ts/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/wemerson-silva-kz/twelve-data-ts/issues)
+- 📖 Rapid Ap: [Api](https://rapidapi.com/twelve-data1-twelve-data-default/api/twelve-data1)
 - 📖 Documentation: [API Documentation](https://twelvedata.com/docs)
 
 ## ⭐ Show your support
