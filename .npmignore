@@ -1,0 +1,82 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Test files
+test.ts
+test-*.ts
+api-test.ts
+comprehensive-test.ts
+*.test.ts
+*.spec.ts
+
+# Development files
+example.ts
+ti.html
+tsconfig.json
+bun.lock
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Security files
+.env.example
+api-test.ts
+comprehensive-test.ts
+test-all-endpoints.ts
+publish.ts
+PUBLISH-GUIDE.md
+READY-TO-PUBLISH.md
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Git
+.git/
+.gitignore

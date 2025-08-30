@@ -1,0 +1,62 @@
+{
+  "name": "twelve-data-ts",
+  "version": "1.0.0",
+  "description": "Complete TypeScript library for Twelve Data API with 154 endpoints, technical indicators, and intelligent rate limiting",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --minify",
+    "build:types": "bun build src/index.ts --outdir dist --target node --minify && tsc --emitDeclarationOnly",
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "security-check": "bun run security-check.ts",
+    "prepublishOnly": "npm run security-check && npm run build",
+    "publish-check": "bun run publish.ts",
+    "postinstall": "echo 'Thanks for installing twelve-data-ts! 🚀'"
+  },
+  "keywords": [
+    "twelve-data",
+    "financial-data",
+    "api",
+    "typescript",
+    "stocks",
+    "forex",
+    "crypto",
+    "rate-limiting",
+    "technical-indicators",
+    "financial-analysis",
+    "market-data",
+    "trading",
+    "fintech"
+  ],
+  "author": {
+    "name": "Wemerson Silva",
+    "email": "your-email@example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/twelve-data-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/twelve-data-ts/issues"
+  },
+  "homepage": "https://github.com/yourusername/twelve-data-ts#readme",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
