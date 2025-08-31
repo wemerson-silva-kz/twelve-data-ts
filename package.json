@@ -1,5 +1,5 @@
 {
-  "name": "twelve-data-ts",
+  "name": "client-twelve-rapid",
   "version": "1.0.0",
   "description": "Complete TypeScript library for Twelve Data API with 154 endpoints, technical indicators, and intelligent rate limiting",
   "main": "dist/index.js",
@@ -15,14 +15,15 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "build": "bun build src/index.ts --outdir dist --target node --minify",
-    "build:types": "bun build src/index.ts --outdir dist --target node --minify && tsc --emitDeclarationOnly",
+    "build": "bun build src/index.ts --outdir dist --target node --minify && npm run build:types",
+    "build:types": "tsc --project tsconfig.build.json",
+    "build:js": "bun build src/index.ts --outdir dist --target node --minify",
     "dev": "bun run src/index.ts",
     "test": "bun test",
     "security-check": "bun run security-check.ts",
     "prepublishOnly": "npm run security-check && npm run build",
     "publish-check": "bun run publish.ts",
-    "postinstall": "echo 'Thanks for installing twelve-data-ts! 🚀'"
+    "postinstall": "echo 'Thanks for installing client-twelve-data-rapidapi! 🚀'"
   },
   "keywords": [
     "twelve-data",

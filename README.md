@@ -1,6 +1,6 @@
-# Twelve Data TypeScript Library
+# Client Twelve Data RapidAPI
 
-[![npm version](https://badge.fury.io/js/twelve-data-ts.svg)](https://badge.fury.io/js/twelve-data-ts)
+[![npm version](https://badge.fury.io/js/client-twelve-rapid.svg)](https://badge.fury.io/js/client-twelve-rapid)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -32,19 +32,18 @@ A complete TypeScript library for the Twelve Data API with automatic rate limiti
 
 ```bash
 # Using npm
-npm install twelve-data-ts
-
+npm install client-twelve-rapid
 # Using yarn
-yarn add twelve-data-ts
+yarn add client-twelve-rapid
 
 # Using bun
-bun add twelve-data-ts
+bun add client-twelve-rapid
 ```
 
 ## 🔑 Quick Start
 
 ```typescript
-import TwelveData from 'twelve-data-ts';
+import TwelveData from 'client-twelve-rapid';
 
 // Initialize with your API key
 const client = new TwelveData({
@@ -212,7 +211,7 @@ import type {
   QuoteData,
   Interval,
   TechnicalIndicatorParams
-} from 'twelve-data-ts';
+} from 'client-twelve-rapid';
 
 const params: TimeSeriesParams = {
   symbol: 'AAPL',
